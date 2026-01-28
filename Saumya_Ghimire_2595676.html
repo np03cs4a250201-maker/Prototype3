@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="Saumya_Ghimire_2595676.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-area">
+            <input type="text" id="cityInput" placeholder="Search for a city..." class="search-input">
+            <button id="searchBtn" class="search-btn">Search</button>
+        </div>
+        <!-- Error Message -->
+        <div id="errorMsg" class="error-msg hidden">City not found. Please try again.</div>
+        <!-- Loading Message -->
+        <div id="loading" class="loading hidden">Loading weather...</div>
+
+        <!-- Weather Content -->
+        <div id="weatherContent" class="hidden">
+            <!-- Main Weather Box -->
+            <div class="weather-box">
+                <div class="location-date">
+                    <h1 id="cityName">Milton Keynes, GB</h1>
+                    <p id="currentDate"></p>
+                </div>
+
+                <div class="weather-main">
+                    <span class="weather-icon-section">
+                        <div id="weatherIcon" class="weather-icon"></div>
+                        <p id="weatherDescription" class="weather-description" width="50"></p>
+                    </span>
+                    <span class="temperature-section">
+                        <div class="temperature" id="temperature"></div>
+                        <p class="feels-like">Feels like <span id="feelsLike"></span></p>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Weather Details -->
+            <div class="details">
+                <div class="detail-box">
+                    <p class="detail-label">Wind Speed</p>
+                    <p class="detail-value" id="windSpeed"></p>
+                    <p class="detail-sub" id="windDirection"></p>
+                </div>
+
+                <div class="detail-box">
+                    <p class="detail-label">Humidity</p>
+                    <p class="detail-value" id="humidity"></p>
+                </div>
+
+                <div class="detail-box">
+                    <p class="detail-label">Visibility</p>
+                    <p class="detail-value" id="visibility"></p>
+                </div>
+
+                <div class="detail-box">
+                    <p class="detail-label">Pressure</p>
+                    <p class="detail-value" id="pressure"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Saumya_Ghimire_2595676.js"></script>
+</body>
+</html>
